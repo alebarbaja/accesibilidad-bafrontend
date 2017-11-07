@@ -1360,19 +1360,10 @@ body {
  *********************************************/
 .main {
   height: 50vh;
-  background-position: center center;
   background-size: 100% 100%;
-  background-image: radial-gradient(90vmin, beige 10%, beige 15%, purple 15%, purple 20%, violet 20%, violet 25%, blue 25%, blue 30%, skyblue 30%, skyblue 35%, yellow 35%, yellow 40%, orange 40%, orange 45%, red 45%, red 50%, beige 50%); }
+  background-image: linear-gradient(-45deg, #EFEFEF 10%, #EFEFEF 15%, #AAA 15%, #AAA 20%, #CCC 20%, #CCC 25%, #888 25%, #888 30%, #BBB 30%, #BBB 35%, #EEE 35%, #EEE 40%, #ff7b00 40%, #ff7b00 45%, #999 45%, #999 50%, #EFEFEF 50%); }
   .main h1.title {
     margin-top: 9vh; }
-
-@-webkit-keyframes bg {
-  50% {
-    background-size: 220% 220%; } }
-
-@keyframes bg {
-  50% {
-    background-size: 220% 220%; } }
 
 .reveal .white h1,
 .reveal .white h2,
@@ -1380,6 +1371,9 @@ body {
 .reveal .white h4,
 .reveal .white h5,
 .reveal .white h6 {
+  background-color: #fff; }
+
+.reveal .white p {
   background-color: #fff; }
 
 .subtitle {
@@ -1431,6 +1425,9 @@ body {
 
 .no-padding {
   padding-left: 0; }
+
+sup.sup-height {
+  line-height: 0; }
 
 .red {
   color: red; }
