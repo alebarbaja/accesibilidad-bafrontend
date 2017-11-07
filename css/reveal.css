@@ -1376,6 +1376,9 @@ body {
 .reveal .white p {
   background-color: #fff; }
 
+.alt-text {
+  display: block; }
+
 .subtitle {
   font-weight: normal;
   opacity: 0.9;
