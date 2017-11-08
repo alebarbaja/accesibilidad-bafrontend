@@ -1448,6 +1448,9 @@ sup.sup-height {
 .font-mono.font-mono {
   font-family: monospace; }
 
+.break {
+  display: block; }
+
 .center.center {
   text-align: center; }
 
