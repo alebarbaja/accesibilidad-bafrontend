@@ -153,11 +153,12 @@
 					</ul>
 				</section>
 				
-				<section class="left">
+				<section class="left incomplete">
 					<h2>Siglas</h2>
 					<ul>
 						<li><strong>AT</strong>: Assistive Technology</li>
 						<li><strong>SR</strong>: Screen Reader</li>
+						<li><strong>ARIA</strong>: </li>
 					</ul>
 				</section>
 
@@ -186,6 +187,7 @@
 				<section>
 					<h2>Contrast Ratio de Lea Verou</h2>
 					<a href="http://leaverou.github.io/contrast-ratio"><img src="img/contrast2.png" alt="Contrast Ratio website de Lea Verou"></a>
+					<!-- Dos formulas matemáticas para comparar el brillo y la diferencia de colores -->
 				</section>
 				
 				<section class="left">
@@ -277,7 +279,7 @@
 				
 				<section>
 					<h2>2. Alts</h2>
-					<img src="img/mouse.gif" alt="Scene from Mean Girls">
+					<img class="fragment" src="img/mouse.gif" alt="Scene from Mean Girls">
 				</section>
 
 				<section class="left">
@@ -345,31 +347,115 @@
 				</section>
 				
 				<section>
-					<h2>Los elementos semánticos<span class="break"></span> tienen roles implícitos</h2>
-					<p class="fragment incomplete">Se pueden cambiar usando... <span class="font-mono">role="..."</span></p>
+					<h2>Los elementos semánticos<span class="break" aria-hidden="true"></span> tienen roles implícitos</h2>
+					<p class="fragment">Se pueden cambiar usando <span class="font-mono">role="..."</span></p>
 				</section>
-				
-				<section>
+
+				<section class="incomplete">
 					<h2>Barra de navegación</h2>
 					<pre><code data-trim>
-&lt;div class="nav">
+&lt;nav class="nav" role="alert">
 	&lt;ul>
 		&lt;li>&lt;a href="#">Inicio&lt;/a>&lt;/li>
 		&lt;li>&lt;a href="#">Quienes somos&lt;/a>&lt;/li>
 		&lt;li>&lt;a href="#">Servicios&lt;/a>&lt;/li>
 		&lt;li>&lt;a href="#">Contacto&lt;/a>&lt;/li>
 	&lt;/ul>
-&lt;/div>
+&lt;/nav>
 					</code></pre>
+					<span class="nope">DO NOT TRY THIS AT HOME</span>
 				</section>
 				
 				<section>
 					<img src="img/why.gif" class="img-big" alt="Why would you do that? Friends' TV serie">
 				</section>
 				
-				<section class="incomplete">
+				<section>
 					<h2>Actually...</h2>
-					<!-- button Vs. a -->
+				</section>
+
+				<seccion>
+					<h2>Porque nuestras etiquetas semánticas
+					<span class="break" aria-hidden="true"></span>
+					NO son suficientes</h2>
+				</seccion>
+				
+				<section class="incomplete">
+					<h2>(Algunos) Roles disponibles</h2>
+					<ul>
+						<li class="fragment">alert</li>
+						<li class="fragment">dialog</li>
+						<li class="fragment">button</li>
+						<li class="fragment"></li>
+						<li class="fragment"></li>
+					</ul>
+				</section>
+				
+				<section class="incomplete">
+					<h2>Etiquetas neutrales con roles</h2>
+					<ul>
+						<li class="fragment"><span class="font-mono">Span</span> que actúe como checkbox</li>
+						<li class="fragment"><span class="font-mono">A</span> que actúe como botón</li>
+						<li class="fragment"></li>
+						<li class="fragment"></li>
+					</ul>
+				</section>
+				
+				<section class="incomplete">
+					<h2>Debemos generar la interactividad</h2>
+					aria attributes
+				</section>
+				
+				<section>
+					<h2>4. Mostrar / Ocultar elementos</h2>
+				</section>
+
+				<section>
+					<h2>¿A quién se lo queres ocultar?</h2>
+				</seccion>
+
+				<section>
+					<h2>¿A quién se lo queres ocultar?</h2>
+					<ul>
+						<li>Al usuario "común"</li>
+						<li>Al usuario de SR</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Ocultar al usuario "común"</h2>
+					<pre><code data-trim>
+.sr-only{
+	border:0;
+	clip:rect(0 0 0 0);
+	height:1px;
+	margin:-1px;
+	overflow:hidden;
+	padding:0;
+	position:absolute;
+	width:1px;
+}
+					</code></pre>
+				</section>
+
+				<section>
+					<h2>Ocultar al usuario de SR</h2>
+					<pre><code data-trim>
+aria-hidden = "true"
+					</code></pre>
+				</section>
+
+				<!-- captura handbook -->
+				<section class="incomplete">
+					<h2>Fun fact</h2>
+					<p>Agregá comas donde sea necesario</p>
+					<pre><code data-trim>
+&lt;span class="sr-only">,&lt;/span>
+					</code></pre>
+				</seccion>
+				
+				<section>
+					<h2>5. Formularios</h2>
 				</section>
 
 
