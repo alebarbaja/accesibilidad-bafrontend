@@ -446,6 +446,7 @@ aria-hidden = "true"
 
 				<section>
 					<h2>Skip to content</h2>
+					<p>Invisible o visual (focus)</p>
 				</section>
 				
 				<section class="left">
@@ -455,8 +456,24 @@ aria-hidden = "true"
 					</code></pre>
 				</section>
 				
-				<section class="incomplete">
-					<h2>Skip to content</h2>
+				<section>
+					<h2>Invisible</h2>
+					<pre><code data-trim>
+.skip{
+	border: 0;
+	clip: rect(0 0 0 0);
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+	height: 1px;
+}
+					</code></pre>
+				</section>
+				
+				<section>
+					<h2>Visual</h2>
 					<pre><code data-trim>
 .skip {
   padding: 1em;
@@ -476,14 +493,14 @@ aria-hidden = "true"
 				</section>
 
 				<section>
-					<h2>Skip to content</h2>
+					<h2>Skip to content - Visual</h2>
 					<a href="https://codepen.io/joe-watkins/pen/rjhiK?editors=1100" target="_blank" rel="noopener">
 						<img src="img/skip1.png" alt="Codepen example of skip navigation link">
 					</a>
 				</section>
 
 				<section>
-					<h2>Skip to content</h2>
+					<h2>Skip to content - Visual</h2>
 					<a href="http://www.sarasoueidan.com/" target="_blank" rel="noopener">
 						<img src="img/skip2.png" alt="Sara Soueidan's website as another example of skip navigation">
 					</a>
