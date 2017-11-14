@@ -133,6 +133,12 @@
 				
 				<section>
 					<h2>Agregar textos alternativos</h2>
+					<img src="img/sami.png" alt="">
+					<em class="fragment alt-text">"Sami, la hermana"</em>
+				</section>
+				
+				<section>
+					<h2>Agregar textos alternativos</h2>
 					<img src="img/agregando-twitter.png" alt="Interfaz de twitter al momento de crear un tweet con imagen, se puede notar el campo opcional de 'Add description'.">
 				</section>
 				
@@ -154,12 +160,12 @@
 					</ul>
 				</section>
 				
-				<section class="left incomplete">
+				<section class="left">
 					<h2>Siglas</h2>
 					<ul>
 						<li><strong>AT</strong>: Assistive Technology</li>
 						<li><strong>SR</strong>: Screen Reader</li>
-						<li><strong>ARIA</strong>: </li>
+						<li><strong>ARIA</strong>: Accessible Rich Internet Applications</li>
 					</ul>
 				</section>
 
@@ -280,7 +286,7 @@
 				
 				<section>
 					<h2>2. Alts</h2>
-					<img class="fragment" src="img/mouse.gif" alt="Scene from Mean Girls">
+					<img src="img/mouse.gif" alt="Scene from Mean Girls">
 				</section>
 
 				<section class="left">
@@ -351,21 +357,6 @@
 					<h2>Los elementos semánticos<span class="break" aria-hidden="true"></span> tienen roles implícitos</h2>
 					<p class="fragment">Se pueden cambiar usando <span class="font-mono">role="..."</span></p>
 				</section>
-
-				<section class="incomplete">
-					<h2>Barra de navegación</h2>
-					<pre><code data-trim>
-&lt;nav class="nav" role="alert">
-	&lt;ul>
-		&lt;li>&lt;a href="#">Inicio&lt;/a>&lt;/li>
-		&lt;li>&lt;a href="#">Quienes somos&lt;/a>&lt;/li>
-		&lt;li>&lt;a href="#">Servicios&lt;/a>&lt;/li>
-		&lt;li>&lt;a href="#">Contacto&lt;/a>&lt;/li>
-	&lt;/ul>
-&lt;/nav>
-					</code></pre>
-					<span class="nope">DO NOT TRY THIS AT HOME</span>
-				</section>
 				
 				<section>
 					<img src="img/why.gif" class="img-big" alt="Why would you do that? Friends' TV serie">
@@ -381,17 +372,27 @@
 					NO son suficientes</h2>
 				</section>
 				
-				<section class="incomplete left">
+				<section>
+					<h2>A veces necesitamos usar la etiqueta incorrecta</h2>
+				</section>
+
+				<section class="left">
 					<h2>(Algunos) Roles disponibles</h2>
 					<ul>
-						<li class="fragment">alert</li>
+						<li class="fragment">navigation</li>
 						<li class="fragment">dialog</li>
-						<li class="fragment">button</li>
-						<li class="fragment"></li>
-						<li class="fragment"></li>
+						<li class="fragment">alert</li>
+						<li class="fragment">presentation</li>
+						<li class="fragment">status</li>
 					</ul>
 				</section>
+
+				<section>
+					<h2>Y muchos más!</h2>
+					<a href="https://w3c.github.io/using-aria/#aria-roles" target="_blank" rel="noopener">Roles en ARIA</a>
+				</section>
 				
+				<!--
 				<section class="incomplete left">
 					<h2>Etiquetas neutrales con roles</h2>
 					<ul>
@@ -406,6 +407,7 @@
 					<h2>Debemos generar la interactividad</h2>
 					aria attributes
 				</section>
+				-->
 				
 				<section>
 					<h2>4. Mostrar / Ocultar elementos</h2>
@@ -497,8 +499,23 @@ aria-hidden = "true"
 
 				<section class="incomplete">
 					<h2>Testing</h2>
-					<p>ChromeVox / NVDA / VoiceOver ... Machete</p>
+					<p>ChromeVox / NVDA / VoiceOver / JAWS ($) ... Machete</p>
+					<p>ChromeVox lo más accesible y cross-platform</p>
 				</section>
+
+				<section class="incomplete">
+					<h2>Testing</h2>
+					<img src="img/headphones.jpg" alt="Headphones Required">
+				</section>
+
+				<section class="incomplete">
+					<h2>A todo esto... ¿Qué alt le ponemos a esa imagen?</h2>
+					<ul>
+						<li class="fragment">"Headphones" (Imagen de headphones)</li>
+						<li class="fragment">"Headphones Required" (Imagen de headphones required)</li>
+					</ul>
+				</section>
+
 
 				<section>
 					<h2>OS options => Media Queries</h2>
