@@ -413,7 +413,7 @@
 					<h2>4. Mostrar / Ocultar elementos</h2>
 				</section>
 
-				<section>
+				<section class="left">
 					<h2>¿A quién se lo queres ocultar?</h2>
 					<ul>
 						<li>Al usuario "común"</li>
@@ -421,41 +421,77 @@
 					</ul>
 				</section>
 
-				<section>
+				<section class="left">
 					<h2>Ocultar al usuario "común"</h2>
 					<pre><code data-trim>
 .sr-only{
-	border:0;
-	clip:rect(0 0 0 0);
-	height:1px;
-	margin:-1px;
-	overflow:hidden;
-	padding:0;
-	position:absolute;
-	width:1px;
+	border: 0;
+	clip: rect(0 0 0 0);
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+	height: 1px;
 }
 					</code></pre>
 				</section>
 
-				<section>
+				<section class="left">
 					<h2>Ocultar al usuario de SR</h2>
 					<pre><code data-trim>
 aria-hidden = "true"
 					</code></pre>
 				</section>
 
-				<!-- captura handbook -->
-				<section class="incomplete">
-					<h2>Fun fact</h2>
-					<p>Agregá comas donde sea necesario</p>
+				<section>
+					<h2>Skip to content</h2>
+				</section>
+				
+				<section class="left">
+					<h2>Skip to content</h2>
 					<pre><code data-trim>
-&lt;span class="sr-only">,&lt;/span>
+&lt;a class="skip" href="#content">Skip to main content&lt;/a>
 					</code></pre>
 				</section>
 				
 				<section class="incomplete">
-					<h2>Jump to main content</h2>
+					<h2>Skip to content</h2>
+					<pre><code data-trim>
+.skip {
+  padding: 1em;
+  position: absolute;
+  top: -40px;
+  left: 1em;
+  z-index: 1000;
+  color: white;
+}
+
+.skip:focus {
+  position: absolute;
+  top: 0;
+  background: #222;
+}
+					</code></pre>
 				</section>
+
+				<section>
+					<h2>Skip to content</h2>
+					<a href="https://codepen.io/joe-watkins/pen/rjhiK?editors=1100" target="_blank" rel="noopener">
+						<img src="img/skip1.png" alt="Codepen example of skip navigation link">
+					</a>
+				</section>
+
+				<section>
+					<h2>Skip to content</h2>
+					<a href="http://www.sarasoueidan.com/" target="_blank" rel="noopener">
+						<img src="img/skip2.png" alt="Sara Soueidan's website as another example of skip navigation">
+					</a>
+				</section>
+
+
+
+
 
 				<section>
 					<h2>5. Formularios</h2>
